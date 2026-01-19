@@ -27,21 +27,30 @@
 
 ## 🧠 支持的模型
 
-以下模型覆盖日常科研与生产使用需求：
+以下模型覆盖日常科研与生产使用需求，按来源分类：
 
-### Claude 系列
+### 🔐 Antigravity OAuth
 
-| 模型名称 | Alias |
-|:---|:---|
-| `claude-sonnet-4-5` | claude-sonnet-4-5 |
-| `claude-sonnet-4-5-thinking` | claude-sonnet-4-5-20250514 |
-| `claude-opus-4-5-thinking` | claude-opus-4-5-20251101 |
+| 模型名称 | Alias | Fork |
+|:---|:---|:---:|
+| `rev19-uic3-1p` | gemini-2.5-computer-use-preview-10-2025 | ✅ |
+| `gemini-3-pro-image` | gemini-3-pro-image | ✅ |
+| `gemini-3-pro-high` | gemini-3-pro-high | ✅ |
+| `gemini-3-flash` | gemini-3-flash-preview | ✅ |
+| `claude-sonnet-4-5` | claude-sonnet-4-5 | ✅ |
+| `claude-sonnet-4-5-thinking` | claude-sonnet-4-5-20250514 | ✅ |
+| `claude-opus-4-5-thinking` | claude-opus-4-5-20251101 | ✅ |
+| `gemini-2.5-flash` | - | - |
+| `gemini-2.5-flash-lite` | - | - |
+| `gpt-oss-120b-medium` | - | - |
 
-### OpenAI 系列
+### 🤖 Codex OAuth
 
 | 模型名称 | Alias |
 |:---|:---|
 | `gpt-5` | - |
+| `gpt-5-codex` | - |
+| `gpt-5-codex-mini` | - |
 | `gpt-5.1` | - |
 | `gpt-5.1-codex` | - |
 | `gpt-5.1-codex-max` | - |
@@ -49,25 +58,21 @@
 | `gpt-5.2` | - |
 | `gpt-5.2-codex` | - |
 
-### Gemini 系列
+### 💎 Gemini CLI OAuth
 
 | 模型名称 | Alias |
 |:---|:---|
-| `rev19-uic3-1p` | gemini-2.5-computer-use-preview-10-2025 |
-| `gemini-3-pro-image` | gemini-3-pro-image |
-| `gemini-3-pro-high` | gemini-3-pro-high |
-| `gemini-3-flash` | gemini-3-flash-preview |
 | `gemini-2.5-pro` | - |
 | `gemini-3-pro-preview` | - |
 | `gemini-2.5-flash` | - |
 
 > ⚠️ **注意**：目前 Gemini Pro 账号的可用性存在波动，请留意官方状态。
 
-### MiniMax 系列
+### 🔗 Claude API（第三方）
 
-| 模型名称 | Alias |
-|:---|:---|
-| `MiniMax-M2.1` | - |
+| 模型名称 | 来源 | Base URL |
+|:---|:---|:---|
+| `MiniMax-M2.1` | MiniMax | `https://api.minimaxi.com/anthropic` |
 
 ---
 
