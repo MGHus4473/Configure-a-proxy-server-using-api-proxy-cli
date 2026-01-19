@@ -93,3 +93,29 @@
 
 1. 📖 阅读 `server_setting/` 完成服务器部署
 2. 📖 阅读 `api_setting/` 将 API 接入你的 AI 应用
+
+---
+
+## 📚 文档目录
+
+### ⚙️ 服务器配置
+
+| 文件 | 说明 |
+|:---|:---|
+| [server_setting.md](server_setting/server_setting.md) | 服务器部署完整指南，包含 OAuth 登录、API 接入、模型调用配置 |
+
+### 🔌 API 接入指南
+
+| 文件 | 说明 |
+|:---|:---|
+| [claude_code.md](api_setting/claude_code.md) | Claude Code 配置指南（环境变量 / CC-Switch / VS Code 插件） |
+| [kilo_code.md](api_setting/kilo_code.md) | Kilo Code 插件配置指南 |
+| [cherry_studio.md](api_setting/cherry_studio.md) | Cherry Studio 桌面应用配置指南 |
+| [ai_studio.md](api_setting/ai_studio.md) | AI Studio 应用配置指南（WebSocket 连接） |
+
+### 📄 配置文件示例
+
+| 文件 | 说明 |
+|:---|:---|
+| [config.yaml](configs/config.yaml) | CLIProxyAPI 服务端配置文件示例 |
+| [settings.json](configs/settings.json) | VS Code Claude Code 插件配置示例 |
