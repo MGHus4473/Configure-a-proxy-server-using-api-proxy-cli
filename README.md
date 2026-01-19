@@ -93,8 +93,36 @@
 
 1. 📖 阅读 `server_setting/` 完成服务器部署
 2. 📖 阅读 `api_setting/` 将 API 接入你的 AI 应用
-
 ---
+
+## 🔮 代理绕过配置
+
+> ⚠️ **问题场景**：当 CLIProxyAPI 服务器部署在海外时，若本地启用了代理客户端（如 Clash TUN 模式），可能导致发往服务器的 HTTP/HTTPS 请求被代理转发，触发 **502 Bad Gateway** 错误。解决方案是将服务器 IP 加入代理规则的直连白名单。
+
+### 🛠️ 解决方案
+
+在代理客户端（如 Clash）中添加 **全局扩展脚本**，将服务器 IP 设为直连：
+
+```javascript
+function main(config) {
+  // 在规则最前面插入直连规则
+  if (!config.rules) config.rules = [];
+  config.rules.unshift("IP-CIDR,your-server-ip/32,DIRECT,no-resolve");
+  return config;
+}
+```
+
+### 📝 配置说明
+
+| 参数 | 说明 |
+|:---|:---|
+| `your-server-ip` | 替换为你的 CLIProxyAPI 服务器 IP 地址 |
+| `/32` | CIDR 掩码，表示精确匹配单个 IP |
+| `DIRECT` | 直连，不经过代理 |
+| `no-resolve` | 不解析域名，直接使用 IP 匹配 |
+
+> 💡 **提示**：配置完成后，重启代理客户端使规则生效。
+![1768858602471](image/README/1768858602471.png)
 
 ## 📚 文档目录
 
