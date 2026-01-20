@@ -16,8 +16,8 @@
 |:---:|:---|:---|
 | 🔐 OAuth 登录 | Antigravity | 使用 OAuth 认证 |
 | 🔐 OAuth 登录 | Gemini CLI | 使用 Gemini Pro 账号登录 |
-| 🤖 AI 工具 | Codex | OpenAI Codex 客户端 |
-| 🤖 AI 工具 | MiniMax | MiniMax 模型接入 |
+| 🤖 AI 工具 | Codex | OpenAI Codex API接入|
+| 🤖 AI 工具 | MiniMax | MiniMax API接入 |
 | 💻 IDE 插件 | Claude Code | VS Code 插件版本同步支持 |
 | 💻 IDE 插件 | Kilo Code | 开源的VS Code AI插件 |
 | 🖥️ 桌面应用 | [CC-Switch](https://github.com/farion1231/cc-switch.git) | 用于快速切换Claude Code 配置文件 |
