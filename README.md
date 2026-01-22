@@ -107,7 +107,11 @@
 function main(config) {
   // 在规则最前面插入直连规则
   if (!config.rules) config.rules = [];
-  config.rules.unshift("IP-CIDR,your-server-ip/32,DIRECT,no-resolve");
+  
+  config.rules.unshift(
+    "IP-CIDR,your-server-ip/32,DIRECT,no-resolve"，
+    "DOMAIN-SUFFIX,your-domian,DIRECT",
+  );
   return config;
 }
 ```
